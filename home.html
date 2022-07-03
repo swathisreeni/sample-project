@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="logo">
+            <h1>
+                <span class="jab">Jab</span><span class="tv">TV</span><span class="fist">&#x1F44A;</span>
+            </h1>
+        </a>
+        <div class="theme-switch">
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="label">
+               <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+               <ion-icon name="moon-outline" class="moon"></ion-icon>
+               <div class="switcher"></div>
+            </label>
+        </div>
+        <ul>
+            <li class="nav-item">
+                <a href="#about" class="nav-link" id="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#stars" class="nav-link" id="nav-link">Boxing Stars</a>
+            </li>
+            <li class="nav-item">
+                <a href="#stakeholders" class="nav-link" id="nav-link">stakeholders</a>
+            </li>
+            <li class="nav-item">
+                <a href="#sub" class="nav-link" id="nav-link">Subscribe</a>
+            </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="intro-text">
+            <h1>
+                <span class="hear"> You can Hear the Jabs </span> <br />
+                <span class="connecting"> Connecting</span>
+            </h1>
+            <p>
+                An online streaming platform for boxing matches <br />
+                We also dedicate some special time to throwbacks cuz old is gold
+            </p>
+            <a class="btn red" href="#">Learn More</a>
+            <a class="btn blue" href="#">Subscribe</a>
+        </div>
+        <div class="i-frame">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sUmM_PFpsvQ"
+                title="YouTube video player" frameborder="10"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <div class="stand-1"></div>
+            <div class="stand-2"></div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h3>Watch the Jabs</h3>
+        <p>
+          Our primary objective is to bring live boxing matches to fans all around
+          the world
+        </p>
+
+        <h3>Its not About the Fights Alone!</h3>
+        <p>
+          We also air documentaries specially made for the greats, lifestyle of
+          boxers, news, and more.
+        </p>
+  </section>
+
+  <footer>&copy;2020. All Rights Reserved</footer>
+  <i class="scroll-up" id="scroll-up"
+  ><img
+    src="images/uparrow.png"
+    class="uparrow"
+    alt="up-arrow"
+/></i>
+
+<script>
+    const scrollUp = document.querySelector("#scroll-up");
+
+scrollUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+</script>
+<script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+</script>
+<script>
+    const checkbox = document.querySelector("#checkbox");
+
+checkbox.addEventListener("change", () => {
+  // Toggle website theme
+  document.body.classList.toggle("dark");
+});
+</script>
+
+</body>
+
+</html>
